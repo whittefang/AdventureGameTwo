@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Charactercontroller.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PickUp.cs">
     <Files>
-      <File FileName="Assets\Scripts\Charactercontroller.cs" Line="36" Column="2" />
+      <File FileName="Assets\Scripts\Charactercontroller.cs" Line="36" Column="1" />
+      <File FileName="Assets\Scripts\PickUp.cs" Line="24" Column="37" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
