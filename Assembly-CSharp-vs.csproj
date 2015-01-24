@@ -52,6 +52,7 @@
      <Compile Include="Assets\LeftDetector.cs" />
      <Compile Include="Assets\RightDetector.cs" />
      <Compile Include="Assets\TopDetector.cs" />
+     <Compile Include="Assets\VineChecker.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

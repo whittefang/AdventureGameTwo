@@ -7,6 +7,7 @@ public class Charactercontroller : MonoBehaviour {
 	public GameObject upCheck;
 	public GameObject downCheck;
 	public GameObject SpriteGraphic;
+	public GameObject vineCheckerObj;
 	bool touchingWallLeft = false;
 	bool touchingWallRight = false;
 	bool touchingWallUp = false;
@@ -42,7 +43,9 @@ public class Charactercontroller : MonoBehaviour {
 			transform.Translate(new Vector3(5,0,0) * Time.deltaTime);
 		}
 		// inputs for machete 
-
+		if (Input.GetKey(KeyCode.J)){
+			VineCheck();
+		}
 	
 	}
 	// fucntion to get collision info from children colliders
@@ -73,7 +76,8 @@ public class Charactercontroller : MonoBehaviour {
 	}
 
 	// vine detection
-	bool VineCheck(){
-		return true;
+	void VineCheck(){
+		vineCheckerObj.GetComponent<VineChecker>().CheckVine();
 	}
+
 }
