@@ -1,5 +1,6 @@
 ﻿<Properties>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PickUp.cs">
     <Files>
@@ -9,11 +10,19 @@
   <MonoDevelop.Ide.Workspace />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Charactercontroller.cs">
     <Files>
+=======
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Charactercontroller.cs">
+    <Files>
+>>>>>>> parent of 8690e0d... Able to pick up items
       <File FileName="Assets\RightDetector.cs" Line="25" Column="3" />
       <File FileName="Assets\LeftDetector.cs" Line="24" Column="3" />
       <File FileName="Assets\DownDetector.cs" Line="24" Column="3" />
       <File FileName="Assets\TopDetector.cs" Line="20" Column="1" />
       <File FileName="Assets\Charactercontroller.cs" Line="47" Column="30" />
+<<<<<<< HEAD
+>>>>>>> parent of 8690e0d... Able to pick up items
+=======
 >>>>>>> parent of 8690e0d... Able to pick up items
     </Files>
   </MonoDevelop.Ide.Workbench>
