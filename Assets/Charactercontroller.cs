@@ -17,33 +17,44 @@ public class Charactercontroller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		checker ();
 		if ((Input.GetKey(KeyCode.W)) && (touchingWallUp == false)){
-			//transform.position = new Vector2(transform.position.y, transform.transform.position.y +1);
-
 			transform.Translate(new Vector3(0,5,0) * Time.deltaTime);
 		}
 		if ((Input.GetKey(KeyCode.S)) && (touchingWallDown == false)){
-			//transform.position = new Vector2(transform.position.y, transform.transform.position.y +1);
-			
 			transform.Translate(new Vector3(0,-5,0) * Time.deltaTime);
 		}
-		if ((Input.GetKey(KeyCode.A)) && (touchingWallRight == false)){
-			//transform.position = new Vector2(transform.position.y, transform.transform.position.y +1);
-			
+		if ((Input.GetKey(KeyCode.A)) && (touchingWallLeft == false)){
 			transform.Translate(new Vector3(-5,0,0) * Time.deltaTime);
 		}
-		if ((Input.GetKey(KeyCode.D)) && (touchingWallLeft == false)){
-			//transform.position = new Vector2(transform.position.y, transform.transform.position.y +1);
-			
+		if ((Input.GetKey(KeyCode.D)) && (touchingWallRight == false)){
 			transform.Translate(new Vector3(5,0,0) * Time.deltaTime);
 		}
 	
 	}
+	void checker(){
 
-	void OnTriggerEnter2D(Collider2D other){
+		if (downCheck.GetComponent<DownDetector> ().CheckIt ()) {
+			Debug.Log ("Main Checker down");
+			touchingWallDown = true;	
+		} else {touchingWallDown = false;}
+		if (leftCheck.GetComponent<LeftDetector>().CheckIt()) {
+			Debug.Log("Main Checker up");
+			touchingWallLeft = true;	
+		}else {touchingWallLeft = false;}
+		if (rightCheck.GetComponent<RightDetector>().CheckIt()) {
+			Debug.Log("Main Checker right");
+			touchingWallRight = true;	
+		}else {touchingWallRight = false;}
+		if (upCheck.GetComponent<TopDetector>().CheckIt()) {
+			Debug.Log("Main Checker left");
+			touchingWallUp = true;	
+		}else {touchingWallUp = false;}
+	}
+	/*void OnTriggerEnter2D(Collider2D other){
 
 		if (other.tag == "wall"){
 			touchingWallLeft = true;
 		}
-	}
+	}*/
 }

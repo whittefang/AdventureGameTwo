@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class TopDetector : MonoBehaviour {
-
+	bool IsTouching = false;
 	// Use this for initialization
 	void Start () {
 	
@@ -13,9 +13,17 @@ public class TopDetector : MonoBehaviour {
 	
 	}
 	void OnTriggerEnter2D(Collider2D other){
-		
-		if (other.tag == "wall"){
-			touchingWallLeft = true;
+		if (other.tag == "wall") {
+			IsTouching = true;
 		}
+	}
+	void OnTriggerExit2D(Collider2D other){
+		if (other.tag == "wall") {
+			IsTouching = false;
+		}
+	}
+
+	public bool CheckIt(){
+		return IsTouching;
 	}
 }
