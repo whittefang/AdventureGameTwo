@@ -18,7 +18,11 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 <<<<<<< HEAD
+<<<<<<< HEAD
 													GlobalSection(MonoDevelopProperties) = preSolution
+=======
+																								GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> parent of a80a4dd... Revert "Able to pick up items"
 =======
 																								GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> parent of a80a4dd... Revert "Able to pick up items"
