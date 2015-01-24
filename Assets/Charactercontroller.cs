@@ -6,6 +6,7 @@ public class Charactercontroller : MonoBehaviour {
 	public GameObject leftCheck;
 	public GameObject upCheck;
 	public GameObject downCheck;
+	public float speed;
 	bool touchingWallLeft = false;
 	bool touchingWallRight = false;
 	bool touchingWallUp = false;
@@ -19,16 +20,16 @@ public class Charactercontroller : MonoBehaviour {
 	void Update () {
 		checker ();
 		if ((Input.GetKey(KeyCode.W)) && (touchingWallUp == false)){
-			transform.Translate(new Vector3(0,5,0) * Time.deltaTime);
+			transform.Translate(new Vector3(0,speed,0) * Time.deltaTime);
 		}
 		if ((Input.GetKey(KeyCode.S)) && (touchingWallDown == false)){
-			transform.Translate(new Vector3(0,-5,0) * Time.deltaTime);
+			transform.Translate(new Vector3(0,-speed,0) * Time.deltaTime);
 		}
 		if ((Input.GetKey(KeyCode.A)) && (touchingWallLeft == false)){
-			transform.Translate(new Vector3(-5,0,0) * Time.deltaTime);
+			transform.Translate(new Vector3(-speed,0,0) * Time.deltaTime);
 		}
 		if ((Input.GetKey(KeyCode.D)) && (touchingWallRight == false)){
-			transform.Translate(new Vector3(5,0,0) * Time.deltaTime);
+			transform.Translate(new Vector3(speed,0,0) * Time.deltaTime);
 		}
 	
 	}
