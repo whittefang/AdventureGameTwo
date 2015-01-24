@@ -32,11 +32,4 @@ public class Charactercontroller : MonoBehaviour {
 		}
 	
 	}
-
-	void OnTriggerEnter2D(Collider2D other){
-
-		if (other.tag == "wall"){
-			Destroy(other.gameObject, 0);
-		}
-	}
 }
