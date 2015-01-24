@@ -47,6 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Charactercontroller.cs" />
+     <Compile Include="Assets\Checker.cs" />
+     <Compile Include="Assets\DownDetector.cs" />
+     <Compile Include="Assets\LeftDetector.cs" />
+     <Compile Include="Assets\RightDetector.cs" />
+     <Compile Include="Assets\TopDetector.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
