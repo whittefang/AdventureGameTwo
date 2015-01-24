@@ -52,6 +52,7 @@
      <Compile Include="Assets\LeftDetector.cs" />
      <Compile Include="Assets\RightDetector.cs" />
      <Compile Include="Assets\TopDetector.cs" />
+     <Compile Include="Assets\VineChecker.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
