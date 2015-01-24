@@ -8,7 +8,6 @@ public class PickUp : MonoBehaviour
 	private bool Machete;
 	private bool Ladder;
 	private bool Planks;
-	public bool hasMachete;
 
 	void Start()
 	{
@@ -60,6 +59,53 @@ public class PickUp : MonoBehaviour
 				invText.text += "Planks ";
 				Destroy(other.gameObject);
 			}
+		}
+	}
+	bool CheckMachete()
+	{
+		if(Machete == true)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	bool CheckLadder()
+	{
+		if(Ladder == true)
+		{
+			return Ladder;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	bool CheckPlanks()
+	{
+		if(Machete == true)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	bool CheckTourch()
+	{
+		if(Machete == true)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
 		}
 	}
 }
