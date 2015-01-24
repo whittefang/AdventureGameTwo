@@ -2,7 +2,11 @@
 using System.Collections;
 
 public class Charactercontroller : MonoBehaviour {
-	public bool touchingWallLeft = false;
+	public GameObject rightCheck;
+	public GameObject leftCheck;
+	public GameObject upCheck;
+	public GameObject downCheck;
+	bool touchingWallLeft = false;
 	bool touchingWallRight = false;
 	bool touchingWallUp = false;
 	bool touchingWallDown = false;
