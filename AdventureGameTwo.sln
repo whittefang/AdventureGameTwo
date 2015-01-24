@@ -17,17 +17,16 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-													GlobalSection(MonoDevelopProperties) = preSolution
+																					GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																								GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> parent of a80a4dd... Revert "Able to pick up items"
 =======
 																								GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> parent of a80a4dd... Revert "Able to pick up items"
+=======
+											GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> parent of 8690e0d... Able to pick up items
 =======
 											GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> parent of 8690e0d... Able to pick up items
