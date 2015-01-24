@@ -33,6 +33,8 @@ public class Charactercontroller : MonoBehaviour {
 		}
 	
 	}
+
+
 	void checker(){
 
 		if (downCheck.GetComponent<DownDetector> ().CheckIt ()) {
@@ -52,10 +54,5 @@ public class Charactercontroller : MonoBehaviour {
 			touchingWallUp = true;	
 		}else {touchingWallUp = false;}
 	}
-	/*void OnTriggerEnter2D(Collider2D other){
-
-		if (other.tag == "wall"){
-			touchingWallLeft = true;
-		}
-	}*/
+	
 }
